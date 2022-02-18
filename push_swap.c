@@ -6,7 +6,7 @@
 /*   By: cben-bar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/10 19:00:33 by cben-bar          #+#    #+#             */
-/*   Updated: 2022/02/18 16:59:28 by cben-bar         ###   ########lyon.fr   */
+/*   Updated: 2022/02/18 17:07:13 by cben-bar         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,10 +15,11 @@
 
 int	main(int ac, char **av)
 {
-//	size_t	i;
-//	size_t	j;
 	t_data	*data;
 	t_list	*stack_a;
+//	size_t	i;
+//	size_t	j;
+
 
 //	i = 0;
 //	j = 0;

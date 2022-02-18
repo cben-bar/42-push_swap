@@ -6,7 +6,7 @@
 /*   By: cben-bar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/18 16:33:22 by cben-bar          #+#    #+#             */
-/*   Updated: 2022/02/18 16:57:30 by cben-bar         ###   ########lyon.fr   */
+/*   Updated: 2022/02/18 17:06:25 by cben-bar         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,6 @@ void	a_is_sorted(t_list **stack_a, t_data *data)
 
 	tmp = *stack_a;
 	tmp_next = tmp->next;
-
 	while (tmp_next != NULL && tmp_next->content > tmp->content)
 	{
 		if (tmp_next->next == NULL)
