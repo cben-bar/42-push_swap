@@ -6,7 +6,7 @@
 /*   By: cben-bar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/10 19:00:33 by cben-bar          #+#    #+#             */
-/*   Updated: 2022/02/18 17:07:13 by cben-bar         ###   ########lyon.fr   */
+/*   Updated: 2022/02/18 18:11:51 by cben-bar         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,8 @@ int	main(int ac, char **av)
 //	j = 0;
 	if (ac > 1)
 	{
+		if (av[1] == NULL)
+			exit(EXIT_FAILURE);
 		data = init_data(av);
 //		while (data->params[j])
 //		{
