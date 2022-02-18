@@ -20,6 +20,7 @@ SRCS		=	./push_swap.c						\
 				./parsing/bool_str_same.c			\
 				./parsing/init_data.c				\
 				./parsing/init_stack_a.c			\
+				./parsing/a_is_sorted.c				\
 				./parsing/clear_data.c				\
 				./utils/strjoin_space.c				\
 				./utils/is_empty_list.c				\
@@ -39,7 +40,8 @@ SRCS		=	./push_swap.c						\
 				./operations/pb.c					\
 				./operations/rra.c					\
 				./operations/rrb.c					\
-				./operations/rrr.c
+				./operations/rrr.c					\
+				./sorting/sort_it.c
 
 
 OBJS		=	${SRCS:.c=.o}

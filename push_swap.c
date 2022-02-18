@@ -6,7 +6,7 @@
 /*   By: cben-bar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/10 19:00:33 by cben-bar          #+#    #+#             */
-/*   Updated: 2022/02/18 13:25:36 by cben-bar         ###   ########lyon.fr   */
+/*   Updated: 2022/02/18 16:59:28 by cben-bar         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,25 +15,24 @@
 
 int	main(int ac, char **av)
 {
-	size_t	y;
-	size_t	i;
-	size_t	j;
+//	size_t	i;
+//	size_t	j;
 	t_data	*data;
 	t_list	*stack_a;
 
-	y = 0;
-	i = 0;
-	j = 0;
+//	i = 0;
+//	j = 0;
 	if (ac > 1)
 	{
 		data = init_data(av);
-		while (data->params[j])
-		{
-			printf("paramas %zu de main = %s\n", j, data->params[j]);
-			j++;
-		}
+//		while (data->params[j])
+//		{
+//			printf("paramas %zu de main = %s\n", j, data->params[j]);
+//			j++;
+//		}
 		check_input(data);
 		stack_a = init_stack_a(&stack_a, data);
+		sort_it(&stack_a, data);
 		print_int_list(stack_a);
 		lst_clear(&stack_a);
 		clear_data(data);

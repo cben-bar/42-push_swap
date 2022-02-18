@@ -6,7 +6,7 @@
 /*   By: cben-bar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/10 19:15:00 by cben-bar          #+#    #+#             */
-/*   Updated: 2022/02/18 14:27:55 by cben-bar         ###   ########lyon.fr   */
+/*   Updated: 2022/02/18 16:53:38 by cben-bar         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,6 +56,7 @@ t_bool		bool_no_duplicates(t_data *data);
 t_bool		bool_str_same(const char *s1, const char *s2);
 t_data		*init_data(char **av);
 t_list		*init_stack_a(t_list **stack_a, t_data *data);
+void		a_is_sorted(t_list **stack_a, t_data *data);
 void		clear_data(t_data *data);
 
 /* ****************************************************************************
@@ -75,6 +76,7 @@ void		print_int_list(t_list *lst);
 char		*strjoin_space(char *s1, char *s2, size_t n);
 void		transform_char_in_str(char *s, char old, char n);
 long long	ft_atoll(const char *s);
+
 /* ****************************************************************************
 -----------------------------PROTOTYPES OPERATIONS-----------------------------
 * ************************************************************************** */
@@ -90,5 +92,11 @@ void		pb(t_list **stack_a, t_list **stack_b);
 void		rra(t_list **stack_a, int to_find);
 void		rrb(t_list **stack_b, int to_find);
 void		rrr(t_list **stack_a, t_list **stack_b, int to_find);
+
+/* ****************************************************************************
+-----------------------------PROTOTYPES OPERATIONS-----------------------------
+* ************************************************************************** */
+
+void	sort_it(t_list **stack_a, t_data *data);
 
 #endif
