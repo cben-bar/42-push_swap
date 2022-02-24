@@ -6,7 +6,7 @@
 /*   By: cben-bar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/10 19:00:33 by cben-bar          #+#    #+#             */
-/*   Updated: 2022/02/18 18:11:51 by cben-bar         ###   ########lyon.fr   */
+/*   Updated: 2022/02/24 18:57:10 by cben-bar         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,27 +17,26 @@ int	main(int ac, char **av)
 {
 	t_data	*data;
 	t_list	*stack_a;
+	t_list	*stack_b;
 //	size_t	i;
-//	size_t	j;
 
 
 //	i = 0;
-//	j = 0;
 	if (ac > 1)
 	{
 		if (av[1] == NULL)
 			exit(EXIT_FAILURE);
 		data = init_data(av);
-//		while (data->params[j])
-//		{
-//			printf("paramas %zu de main = %s\n", j, data->params[j]);
-//			j++;
-//		}
 		check_input(data);
 		stack_a = init_stack_a(&stack_a, data);
+		stack_b = malloc(sizeof(t_list));
 		sort_it(&stack_a, data);
 		print_int_list(stack_a);
+		printf("stack_b:\n");
+//		print_int_list(stack_b);
+		printf("nb elements = %zu\n", list_len(stack_a));
 		lst_clear(&stack_a);
+		lst_clear(&stack_b);
 		clear_data(data);
 		return (0);
 	}
