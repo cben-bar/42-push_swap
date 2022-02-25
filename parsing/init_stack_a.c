@@ -6,7 +6,7 @@
 /*   By: cben-bar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/14 18:33:05 by cben-bar          #+#    #+#             */
-/*   Updated: 2022/02/18 13:39:09 by cben-bar         ###   ########lyon.fr   */
+/*   Updated: 2022/02/25 20:02:13 by cben-bar         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ t_list	*init_stack_a(t_list **stack_a, t_data *data)
 			while (tmp2)
 			{
 				if (tmp->content == tmp2->content)
-					error_exit ("Error🤯\ndoublon(by init_stack_a)\n", data);
+					error_exit(data);
 				tmp2 = tmp2->next;
 			}
 		}

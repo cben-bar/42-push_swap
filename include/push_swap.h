@@ -6,7 +6,7 @@
 /*   By: cben-bar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/10 19:15:00 by cben-bar          #+#    #+#             */
-/*   Updated: 2022/02/25 19:44:47 by cben-bar         ###   ########lyon.fr   */
+/*   Updated: 2022/02/25 20:00:38 by cben-bar         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,7 @@ typedef struct s_data
 * ************************************************************************** */
 
 int			main(int ac, char **av);
-void		error_exit(const char *msg, t_data *data);
+void		error_exit(t_data *data);
 void		check_input(t_data *data);
 t_bool		bool_all_int(t_data *data);
 t_bool		bool_valid_input(t_data *data);
