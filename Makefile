@@ -41,7 +41,8 @@ SRCS		=	./push_swap.c						\
 				./operations/rra.c					\
 				./operations/rrb.c					\
 				./operations/rrr.c					\
-				./sorting/sort_it.c
+				./sorting/sort_it.c					\
+				./sorting/sort_three.c
 
 
 OBJS		=	${SRCS:.c=.o}

@@ -6,7 +6,7 @@
 /*   By: cben-bar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/10 19:15:00 by cben-bar          #+#    #+#             */
-/*   Updated: 2022/02/18 17:07:42 by cben-bar         ###   ########lyon.fr   */
+/*   Updated: 2022/02/25 19:44:47 by cben-bar         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -94,9 +94,10 @@ void		rrb(t_list **stack_b, int to_find);
 void		rrr(t_list **stack_a, t_list **stack_b, int to_find);
 
 /* ****************************************************************************
------------------------------PROTOTYPES OPERATIONS-----------------------------
+-----------------------------PROTOTYPES SORTING-----------------------------
 * ************************************************************************** */
 
-void		sort_it(t_list **stack_a, t_data *data);
+void		sort_it(t_list **stack_a, t_list **stack_b, t_data *data);
+void		sort_three(t_list **stack_a);
 
 #endif
