@@ -42,6 +42,7 @@ SRCS		=	./push_swap.c						\
 				./operations/rrb.c					\
 				./operations/rrr.c					\
 				./sorting/sort_it.c					\
+				./sorting/sort_two.c				\
 				./sorting/sort_three.c
 
 
