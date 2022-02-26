@@ -6,7 +6,7 @@
 /*   By: cben-bar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/25 20:22:03 by cben-bar          #+#    #+#             */
-/*   Updated: 2022/02/25 20:24:42 by cben-bar         ###   ########lyon.fr   */
+/*   Updated: 2022/02/26 13:59:48 by cben-bar         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,13 @@
 
 void	sort_five(t_list **stack_a, **stack_b)
 {
-	pb
-	pb
-	sort_three
-	check lordre de b et envoyer dans a ou sb puis pa pa
+	if (list_len(*stack_a) == 5)
+	{
+	
+
+	}
+	mina_top(stack_a);
+	pb(stack_a, stack_b, 1);
+	sort_three(stack_a, 1);
+	pa(stack_a, stack_b);
+}
