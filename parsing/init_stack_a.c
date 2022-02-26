@@ -6,7 +6,7 @@
 /*   By: cben-bar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/14 18:33:05 by cben-bar          #+#    #+#             */
-/*   Updated: 2022/02/25 20:02:13 by cben-bar         ###   ########lyon.fr   */
+/*   Updated: 2022/02/26 01:51:47 by cben-bar         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ t_list	*init_stack_a(t_list **stack_a, t_data *data)
 
 	i = -1;
 	while (data->params[++i])
-		ft_lstadd_back(stack_a, new_list(ft_atoi(data->params[i])));
+		lstadd_back(stack_a, new_list(ft_atoi(data->params[i])));
 	tmp = *stack_a;
 	tmp2 = tmp->next;
 	while (tmp)

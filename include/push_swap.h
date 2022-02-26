@@ -6,7 +6,7 @@
 /*   By: cben-bar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/10 19:15:00 by cben-bar          #+#    #+#             */
-/*   Updated: 2022/02/25 21:33:26 by cben-bar         ###   ########lyon.fr   */
+/*   Updated: 2022/02/26 01:51:15 by cben-bar         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,6 +63,8 @@ void		clear_data(t_data *data);
 ----------------------------PROTOTYPES LINKED LIST----------------------------
 * ************************************************************************** */
 
+t_list		*lst_last(t_list *lst);
+void		lstadd_back(t_list **alst, t_list *new);
 t_list		*new_list(int content);
 void		lst_clear(t_list **lst);
 

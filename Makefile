@@ -26,6 +26,8 @@ SRCS		=	./push_swap.c						\
 				./utils/is_empty_list.c				\
 				./utils/ft_atoll.c					\
 				./linked_list/new_list.c			\
+				./linked_list/lstadd_back.c			\
+				./linked_list/lst_last.c			\
 				./linked_list/lst_clear.c			\
 				./utils/transform_char_in_str.c		\
 				./utils/list_len.c					\
