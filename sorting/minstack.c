@@ -6,7 +6,7 @@
 /*   By: cben-bar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/26 15:52:13 by cben-bar          #+#    #+#             */
-/*   Updated: 2022/02/26 15:56:57 by cben-bar         ###   ########lyon.fr   */
+/*   Updated: 2022/02/26 18:12:55 by cben-bar         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,17 @@
 
 int	minstack(t_list **stack_a)
 {
-	t_list	*
+	t_list	*beg;
 	int		min;
+
+	beg = *stack_a;
+	min = beg->content;
+	while (beg->next)
+	{
+		if (beg->content < min)
+			min = beg->content;
+		beg = beg->next;
+	}
+	if (beg->content < min)
+		min = beg->content;
+	return (min);

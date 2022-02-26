@@ -6,7 +6,7 @@
 /*   By: cben-bar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/26 13:53:37 by cben-bar          #+#    #+#             */
-/*   Updated: 2022/02/26 13:59:45 by cben-bar         ###   ########lyon.fr   */
+/*   Updated: 2022/02/26 18:22:26 by cben-bar         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ void	mina_top(t_list **stack_a)
 	if (list_len(*stack_a) < 1)
 		return ;
 	min = minstack(stack_a);
-	node = minstack_node(stack_a);
+	node = node_position(stack_a);
 	if (node_position(stack_a, node) < list_len(*stack_a) / 2)
 	{
 		while ((*stack_a)->content != min)

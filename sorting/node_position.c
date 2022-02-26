@@ -1,27 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   lst_last.c                                         :+:      :+:    :+:   */
+/*   node_position.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cben-bar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/26 01:45:26 by cben-bar          #+#    #+#             */
-/*   Updated: 2022/02/26 17:49:20 by cben-bar         ###   ########lyon.fr   */
+/*   Created: 2022/02/26 18:13:07 by cben-bar          #+#    #+#             */
+/*   Updated: 2022/02/26 18:21:56 by cben-bar         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/push_swap.h"
 
-t_list	*lst_last(t_list *lst)
+t_list	node_position(t_list **stack_a)
 {
-	t_list	*tmp;
+	t_list	*beg;
+	t_list	*min;
 
-	tmp = lst;
-	if (!lst)
-		return (NULL);
-	while (tmp->next != NULL)
+	beg = *a;
+	min = beg;
+	while (beg->next)
 	{
-		tmp = tmp->next;
+		if (beg->content < min->content)
+			min = beg;
+		beg = beg->next;
 	}
-	return (tmp);
+	if (beg->content < min->content)
+		min = beg;
+	return (min);
 }

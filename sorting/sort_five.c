@@ -6,13 +6,13 @@
 /*   By: cben-bar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/25 20:22:03 by cben-bar          #+#    #+#             */
-/*   Updated: 2022/02/26 17:15:54 by cben-bar         ###   ########lyon.fr   */
+/*   Updated: 2022/02/26 18:20:03 by cben-bar         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/push_swap.h"
 
-void	sort_five(t_list **stack_a, **stack_b)
+void	sort_five(t_list **stack_a, t_list **stack_b)
 {
 	if (list_len(*stack_a) == 5)
 	{
@@ -26,7 +26,7 @@ void	sort_five(t_list **stack_a, **stack_b)
 		return ;
 	}
 	mina_top(stack_a);
-	pb(stack_a, stack_b, 1);
+	pb(stack_a, stack_b);
 	sort_three(stack_a);
 	pa(stack_a, stack_b);
 }
