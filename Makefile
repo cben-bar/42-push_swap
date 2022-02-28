@@ -48,8 +48,9 @@ SRCS		=	./push_swap.c						\
 				./sorting/sort_three.c				\
 				./sorting/sort_five.c				\
 				./sorting/mina_top.c				\
-				./sorting/stackmin.c				\
-				./sorting/node_position.c
+				./sorting/minstack.c				\
+				./sorting/node_min.c				\
+				.//sorting/node_position.c
 				
 
 
