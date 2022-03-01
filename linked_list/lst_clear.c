@@ -6,7 +6,7 @@
 /*   By: cben-bar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/12 16:20:54 by cben-bar          #+#    #+#             */
-/*   Updated: 2022/02/26 17:59:38 by cben-bar         ###   ########lyon.fr   */
+/*   Updated: 2022/03/01 15:23:39 by cben-bar         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,11 +16,14 @@ void	lst_clear(t_list **lst)
 {
 	t_list	*tmp;
 
-	while (*lst)
+	if (*lst)
 	{
-		tmp = (*lst)->next;
-		free(*lst);
-		*lst = tmp;
+		while (*lst)
+		{
+			tmp = (*lst)->next;
+			free(*lst);
+			*lst = tmp;
+		}
+		*lst = NULL;
 	}
-	*lst = NULL;
 }

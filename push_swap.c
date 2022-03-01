@@ -6,7 +6,7 @@
 /*   By: cben-bar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/10 19:00:33 by cben-bar          #+#    #+#             */
-/*   Updated: 2022/03/01 13:38:50 by cben-bar         ###   ########lyon.fr   */
+/*   Updated: 2022/03/01 15:26:37 by cben-bar         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,13 +18,13 @@ int	main(int ac, char **av)
 	t_data	*data;
 	t_list	*stack_a;
 	t_list	*stack_b;
-/*	t_list	*tmp_a;
-	t_list	*tmp_b;
-	int		i;*/
+//	t_list	*tmp_a;
+//	t_list	*tmp_b;
+//	int		i;
 
 //	data = NULL;
-//	stack_a = NULL;
-//	stack_b = NULL;
+	stack_a = NULL;
+	stack_b = NULL;
 	if (ac > 1)
 	{
 		if (av[1] == NULL)
@@ -51,13 +51,13 @@ int	main(int ac, char **av)
 			printf("content b before %d = %p\n", i, &tmp_b->content);
 			tmp_b = tmp_b->next;
 			i++;
-		}
-		printf("stack_a:\n");
+		}*/
+/*		printf("stack_a:\n");
 		print_int_list(stack_a);
 		printf("stack_b:\n");
 		print_int_list(stack_b);
-*/		sort_it(&stack_a, &stack_b, data);
-/*		printf("SORTED:\n");
+	*/	sort_it(&stack_a, &stack_b, data);
+	/*	printf("SORTED:\n");
 		printf("stack_a:\n");
 		print_int_list(stack_a);
 		printf("stack_b:\n");
@@ -80,8 +80,9 @@ int	main(int ac, char **av)
 			tmp_b = tmp_b->next;
 			i++;
 		}
-*/		lst_clear(&stack_a);
-		lst_clear(&stack_b);
+	*/	lst_clear(&stack_a);
+		free(stack_b);
+		stack_b = NULL;
 		clear_data(data);
 		return (0);
 	}
