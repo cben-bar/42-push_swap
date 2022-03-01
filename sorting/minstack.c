@@ -6,7 +6,7 @@
 /*   By: cben-bar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/26 15:52:13 by cben-bar          #+#    #+#             */
-/*   Updated: 2022/02/28 16:12:47 by cben-bar         ###   ########lyon.fr   */
+/*   Updated: 2022/03/01 13:27:09 by cben-bar         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,3 +28,4 @@ int	minstack(t_list **stack_a)
 	if (beg->content < min)
 		min = beg->content;
 	return (min);
+}

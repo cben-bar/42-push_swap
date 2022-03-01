@@ -6,7 +6,7 @@
 /*   By: cben-bar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/10 19:15:00 by cben-bar          #+#    #+#             */
-/*   Updated: 2022/02/28 16:08:38 by cben-bar         ###   ########lyon.fr   */
+/*   Updated: 2022/03/01 13:38:12 by cben-bar         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -105,7 +105,7 @@ void		sort_three(t_list **stack_a);
 void		sort_five(t_list **stack_a, t_list **stack_b);
 void		mina_top(t_list **stack_a);
 int			minstack(t_list **stack_a);
-t_list		node_min(t_list **stack_a);
+t_list		*node_min(t_list **stack_a);
 size_t		node_position(t_list **stack_a, t_list *node);
 
 #endif
