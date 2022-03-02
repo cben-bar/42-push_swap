@@ -6,7 +6,7 @@
 /*   By: cben-bar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/10 19:00:33 by cben-bar          #+#    #+#             */
-/*   Updated: 2022/03/02 19:00:52 by cben-bar         ###   ########lyon.fr   */
+/*   Updated: 2022/03/02 22:57:53 by cben-bar         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,6 +61,7 @@ int	main(int ac, char **av)
 		while (tmp_a)
 		{
 			printf("content = %lld, index = %lld\n", tmp_a->content, tmp_a->index);
+			printf("\t'%.8s'\n", (char *)&tmp_a->index);
 			tmp_a = tmp_a->next;
 		}
 		sort_it(&stack_a, &stack_b, data);

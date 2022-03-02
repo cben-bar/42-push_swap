@@ -6,7 +6,7 @@
 /*   By: cben-bar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/26 01:49:20 by cben-bar          #+#    #+#             */
-/*   Updated: 2022/02/26 14:01:06 by cben-bar         ###   ########lyon.fr   */
+/*   Updated: 2022/03/02 22:06:43 by cben-bar         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,10 +24,3 @@ void	lstadd_back(t_list **alst, t_list *new)
 	else
 		tmp->next = new;
 }
-/*
-{
-	if (*(alst))
-		lst_last((*alst))->next = new;
-	else
-		*alst = new;
-}*/
