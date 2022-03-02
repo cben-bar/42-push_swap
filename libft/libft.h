@@ -6,7 +6,7 @@
 /*   By: cben-bar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/08 03:49:31 by cben-bar          #+#    #+#             */
-/*   Updated: 2022/02/25 17:17:31 by cben-bar         ###   ########lyon.fr   */
+/*   Updated: 2022/03/02 18:40:49 by cben-bar         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,7 @@
 typedef struct s_list
 {
 	long long		content;
+	long long		index;
 	struct s_list	*next;
 }					t_list;
 

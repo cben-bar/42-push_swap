@@ -20,6 +20,7 @@ SRCS		=	./push_swap.c						\
 				./parsing/bool_str_same.c			\
 				./parsing/init_data.c				\
 				./parsing/init_stack_a.c			\
+				./parsing/init_index.c				\
 				./parsing/a_is_sorted.c				\
 				./parsing/clear_data.c				\
 				./utils/strjoin_space.c				\

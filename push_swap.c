@@ -6,7 +6,7 @@
 /*   By: cben-bar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/10 19:00:33 by cben-bar          #+#    #+#             */
-/*   Updated: 2022/03/01 15:26:37 by cben-bar         ###   ########lyon.fr   */
+/*   Updated: 2022/03/02 19:00:52 by cben-bar         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ int	main(int ac, char **av)
 	t_data	*data;
 	t_list	*stack_a;
 	t_list	*stack_b;
-//	t_list	*tmp_a;
+	t_list	*tmp_a;
 //	t_list	*tmp_b;
 //	int		i;
 
@@ -32,11 +32,12 @@ int	main(int ac, char **av)
 		data = init_data(av);
 		check_input(data);
 		stack_a = init_stack_a(&stack_a, data);
+		stack_a = init_index(&stack_a);
 		if (list_len(stack_a) > 3)
 			stack_b = malloc(sizeof(t_list));
-/*		i = 0;
+//		i = 0;
 		tmp_a = stack_a;
-		while (tmp_a)
+/*		while (tmp_a)
 		{
 			printf("content a before %d = %lld\n", i, tmp_a->content);
 			printf("content a before %d = %p\n", i, &tmp_a->content);
@@ -56,7 +57,13 @@ int	main(int ac, char **av)
 		print_int_list(stack_a);
 		printf("stack_b:\n");
 		print_int_list(stack_b);
-	*/	sort_it(&stack_a, &stack_b, data);
+	*/
+		while (tmp_a)
+		{
+			printf("content = %lld, index = %lld\n", tmp_a->content, tmp_a->index);
+			tmp_a = tmp_a->next;
+		}
+		sort_it(&stack_a, &stack_b, data);
 	/*	printf("SORTED:\n");
 		printf("stack_a:\n");
 		print_int_list(stack_a);
