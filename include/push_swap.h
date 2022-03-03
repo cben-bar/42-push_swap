@@ -6,7 +6,7 @@
 /*   By: cben-bar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/10 19:15:00 by cben-bar          #+#    #+#             */
-/*   Updated: 2022/03/02 18:37:51 by cben-bar         ###   ########lyon.fr   */
+/*   Updated: 2022/03/03 14:01:53 by cben-bar         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,6 +57,7 @@ t_bool		bool_str_same(const char *s1, const char *s2);
 t_data		*init_data(char **av);
 t_list		*init_stack_a(t_list **stack_a, t_data *data);
 t_list		*init_index(t_list **stack_a);
+void		set_up_index(t_list **stack_a);
 void		a_is_sorted(t_list **stack_a, t_data *data);
 void		clear_data(t_data *data);
 

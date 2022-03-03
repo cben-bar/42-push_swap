@@ -1,41 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   init_index.c                                       :+:      :+:    :+:   */
+/*   set_up_index.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cben-bar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/02 18:35:25 by cben-bar          #+#    #+#             */
-/*   Updated: 2022/03/03 14:06:20 by cben-bar         ###   ########lyon.fr   */
+/*   Created: 2022/03/03 13:59:27 by cben-bar          #+#    #+#             */
+/*   Updated: 2022/03/03 14:02:10 by cben-bar         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/push_swap.h"
-#include <printf.h>
 
-t_list	*init_index(t_list **stack_a)
+void	set_up_index(t_list **stack_a)
 {
-	t_list	*ref;
-	t_list	*start;
-	int		index;
+	t_list	*tmp;
 
-	set_up_index(stack_a);
-	ref = *stack_a;
-	index = 0;
-	while (ref)
+	tmp = *stack_a;
+	while (tmp)
 	{
-		start = *stack_a;
-		index = 0;
-		while (start)
-		{
-			if (ref->content > start->content)
-			{
-				index++;
-				ref->index = index;
-			}
-			start = start->next;
-		}
-		ref = ref->next;
+		tmp->index = 0;
+		tmp = tmp->next;
 	}
-	return (*stack_a);
 }
