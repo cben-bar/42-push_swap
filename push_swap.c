@@ -6,7 +6,7 @@
 /*   By: cben-bar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/10 19:00:33 by cben-bar          #+#    #+#             */
-/*   Updated: 2022/03/07 21:00:46 by cben-bar         ###   ########lyon.fr   */
+/*   Updated: 2022/03/07 23:02:16 by cben-bar         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,6 +36,8 @@ int	main(int ac, char **av)
 		if (list_len(stack_a) > 3)
 			stack_b = malloc(sizeof(t_list));
 		printf("max index = %lld\n", max_index(&stack_a));
+		printf("stack_b empty = %d\n",  is_empty_list(stack_b));
+		printf("stack_a empty = %d\n",  is_empty_list(stack_a));
 //		i = 0;
 //		tmp_a = stack_a;
 //		while (tmp_a)
@@ -59,6 +61,10 @@ int	main(int ac, char **av)
 		printf("stack_b:\n");
 		print_int_list(stack_b);
 	
+		printf("stack_b empty = %d\n", is_empty_list(stack_b));
+		printf("stack_a empty = %d\n", is_empty_list(stack_a));
+		printf("stack_a len = %zu\n", list_len(stack_a));
+		printf("stack_b len = %zu\n", list_len(stack_b));
 		tmp_a = stack_a;
 		while (tmp_a)
 		{
@@ -90,10 +96,20 @@ int	main(int ac, char **av)
 //			tmp_b = tmp_b->next;
 //			i++;
 //		}
+		printf("stack_b empty = %d\n",  is_empty_list(stack_b));
+		printf("stack_a empty = %d\n",  is_empty_list(stack_a));
+		printf("stack_a len = %zu\n", list_len(stack_a));
+		printf("stack_b len = %zu\n", list_len(stack_b));
+		printf("stack_a:\n");
+		print_int_list(stack_a);
+		printf("stack_b:\n");
+		print_int_list(stack_b);
 		lst_clear(&stack_a);
 		free(stack_b);
 		stack_b = NULL;
 		clear_data(data);
+		printf("stack_a len = %zu\n", list_len(stack_a));
+		printf("stack_b len = %zu\n", list_len(stack_b));
 		return (0);
 	}
 	exit(EXIT_FAILURE);
