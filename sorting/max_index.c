@@ -1,27 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   max_bit_len.c                                      :+:      :+:    :+:   */
+/*   max_index.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cben-bar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/07 20:17:37 by cben-bar          #+#    #+#             */
-/*   Updated: 2022/03/07 21:17:57 by cben-bar         ###   ########lyon.fr   */
+/*   Created: 2022/03/07 20:58:08 by cben-bar          #+#    #+#             */
+/*   Updated: 2022/03/07 20:59:39 by cben-bar         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/push_swap.h"
 
-size_t	max_bit_len(long long nb)
+long long	max_index(t_list **stack_a)
 {
-	size_t	lb;
+	t_list	*beg;
+	int		max;
 
-	lb = 32;
-	while (lb != 0)
+	beg = *stack_a;
+	max = beg->index;
+	while (beg->next)
 	{
-		if (nb >> (lb - 1) & 1)
-			return (lb);
-		lb--;
+		if (beg->index > max)
+			max = beg->index;
+		beg = beg->next;
 	}
-	return (lb);
+	if (beg->index > max)
+		max = beg->index;
+	return (max);
 }

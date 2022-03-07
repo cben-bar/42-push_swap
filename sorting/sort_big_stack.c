@@ -1,27 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   max_bit_len.c                                      :+:      :+:    :+:   */
+/*   sort_big_stack.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cben-bar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/07 20:17:37 by cben-bar          #+#    #+#             */
-/*   Updated: 2022/03/07 21:17:57 by cben-bar         ###   ########lyon.fr   */
+/*   Created: 2022/03/07 21:02:53 by cben-bar          #+#    #+#             */
+/*   Updated: 2022/03/07 21:18:43 by cben-bar         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/push_swap.h"
+#include <stdio.h>
 
-size_t	max_bit_len(long long nb)
+void	sort_big_stack(t_list **stack_a, t_list **stack_b)
 {
-	size_t	lb;
-
-	lb = 32;
-	while (lb != 0)
-	{
-		if (nb >> (lb - 1) & 1)
-			return (lb);
-		lb--;
-	}
-	return (lb);
+	(void)stack_b;
+	size_t	max_bit;
+	
+	max_bit = max_bit_len(max_index(stack_a));
+	printf("%zu\n", max_bit);
 }
+
+

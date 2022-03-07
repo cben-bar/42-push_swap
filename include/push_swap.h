@@ -6,7 +6,7 @@
 /*   By: cben-bar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/10 19:15:00 by cben-bar          #+#    #+#             */
-/*   Updated: 2022/03/07 20:18:17 by cben-bar         ###   ########lyon.fr   */
+/*   Updated: 2022/03/07 21:11:18 by cben-bar         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -102,13 +102,15 @@ void		rrr(t_list **stack_a, t_list **stack_b, int to_find);
 -----------------------------PROTOTYPES SORTING-----------------------------
 * ************************************************************************** */
 
-void		sort_it(t_list **stack_a, t_list **stack_b, t_data *data);
-void		sort_two(t_list **stack_a);
-void		sort_three(t_list **stack_a);
-void		sort_five(t_list **stack_a, t_list **stack_b);
+long long	max_index(t_list **stack_a);
 void		mina_top(t_list **stack_a);
 int			minstack(t_list **stack_a);
 t_list		*node_min(t_list **stack_a);
 size_t		node_position(t_list **stack_a, t_list *node);
+void		sort_it(t_list **stack_a, t_list **stack_b, t_data *data);
+void		sort_two(t_list **stack_a);
+void		sort_three(t_list **stack_a);
+void		sort_five(t_list **stack_a, t_list **stack_b);
+void		sort_big_stack(t_list **stack_a, t_list **stack_b);
 
 #endif
