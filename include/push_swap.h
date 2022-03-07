@@ -6,7 +6,7 @@
 /*   By: cben-bar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/10 19:15:00 by cben-bar          #+#    #+#             */
-/*   Updated: 2022/03/03 14:01:53 by cben-bar         ###   ########lyon.fr   */
+/*   Updated: 2022/03/07 20:18:17 by cben-bar         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,12 +74,13 @@ void		lst_clear(t_list **lst);
 -------------------------------PROTOTYPES UTILS-------------------------------
 * ************************************************************************** */
 
-t_bool		is_empty_list(t_list *lst);
 size_t		list_len(t_list	*lst);
 void		print_int_list(t_list *lst);
 char		*strjoin_space(char *s1, char *s2, size_t n);
 void		transform_char_in_str(char *s, char old, char n);
 long long	ft_atoll(const char *s);
+t_bool		is_empty_list(t_list *lst);
+size_t		max_bit_len(long long nb);
 
 /* ****************************************************************************
 -----------------------------PROTOTYPES OPERATIONS-----------------------------

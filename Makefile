@@ -24,16 +24,17 @@ SRCS		=	./push_swap.c						\
 				./parsing/set_up_index.c			\
 				./parsing/a_is_sorted.c				\
 				./parsing/clear_data.c				\
-				./utils/strjoin_space.c				\
-				./utils/is_empty_list.c				\
-				./utils/ft_atoll.c					\
 				./linked_list/new_list.c			\
 				./linked_list/lstadd_back.c			\
 				./linked_list/lst_last.c			\
 				./linked_list/lst_clear.c			\
-				./utils/transform_char_in_str.c		\
+				./utils/ft_atoll.c					\
+				./utils/is_empty_list.c				\
 				./utils/list_len.c					\
+				./utils/max_bit_len.c				\
 				./utils/print_int_list.c			\
+				./utils/strjoin_space.c				\
+				./utils/transform_char_in_str.c		\
 				./operations/ra.c					\
 				./operations/rb.c					\
 				./operations/rr.c					\
@@ -45,14 +46,14 @@ SRCS		=	./push_swap.c						\
 				./operations/rra.c					\
 				./operations/rrb.c					\
 				./operations/rrr.c					\
+				./sorting/mina_top.c				\
+				./sorting/minstack.c				\
+				./sorting/node_position.c			\
 				./sorting/sort_it.c					\
 				./sorting/sort_two.c				\
 				./sorting/sort_three.c				\
 				./sorting/sort_five.c				\
-				./sorting/mina_top.c				\
-				./sorting/minstack.c				\
-				./sorting/node_min.c				\
-				.//sorting/node_position.c
+				./sorting/node_min.c
 				
 
 

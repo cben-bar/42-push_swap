@@ -1,20 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   is_empty_list.c                                    :+:      :+:    :+:   */
+/*   max_bit_len.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cben-bar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/12 00:37:46 by cben-bar          #+#    #+#             */
-/*   Updated: 2022/03/07 15:49:01 by cben-bar         ###   ########lyon.fr   */
+/*   Created: 2022/03/07 20:17:37 by cben-bar          #+#    #+#             */
+/*   Updated: 2022/03/07 20:17:43 by cben-bar         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/push_swap.h"
 
-t_bool	is_empty_list(t_list *lst)
+size_t	max_len_bits(long long nb)
 {
-	if (lst == NULL)
-		return (true);
-	return (false);
+	size_t	lb;
+
+	lb = 32;
+	while (lb != 0)
+	{
+		if (nb >> (lb - 1) & 1)
+			return (lb);
+		lb--;
+	}
+	return (lb);
 }
