@@ -6,7 +6,7 @@
 /*   By: cben-bar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/10 19:15:00 by cben-bar          #+#    #+#             */
-/*   Updated: 2022/03/07 21:11:18 by cben-bar         ###   ########lyon.fr   */
+/*   Updated: 2022/03/09 19:35:31 by cben-bar         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,6 +56,7 @@ t_bool		bool_no_duplicates(t_data *data);
 t_bool		bool_str_same(const char *s1, const char *s2);
 t_data		*init_data(char **av);
 t_list		*init_stack_a(t_list **stack_a, t_data *data);
+t_list		*init_stack_b(t_list **stack_a, t_list **stack_b, t_data *data);
 t_list		*init_index(t_list **stack_a);
 void		set_up_index(t_list **stack_a);
 void		a_is_sorted(t_list **stack_a, t_data *data);
@@ -69,6 +70,7 @@ t_list		*lst_last(t_list *lst);
 void		lstadd_back(t_list **alst, t_list *new);
 t_list		*new_list(int content);
 void		lst_clear(t_list **lst);
+void		clean_all(t_list **stack_a, t_data *data);
 
 /* ****************************************************************************
 -------------------------------PROTOTYPES UTILS-------------------------------

@@ -1,40 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   sort_big_stack.c                                   :+:      :+:    :+:   */
+/*   init_stack_b.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cben-bar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/07 21:02:53 by cben-bar          #+#    #+#             */
-/*   Updated: 2022/03/09 18:31:21 by cben-bar         ###   ########lyon.fr   */
+/*   Created: 2022/03/09 18:55:36 by cben-bar          #+#    #+#             */
+/*   Updated: 2022/03/09 19:13:12 by cben-bar         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/push_swap.h"
 
-void	sort_big_stack(t_list **stack_a, t_list **stack_b)
+t_list	*init_stack_b(t_list **stack_a, t_list **stack_b, t_data *data)
 {
-	size_t	max_bit;
-	size_t	max_num;
-	size_t	i;
-	size_t	j;
-
-	max_bit = max_bit_len(max_index(stack_a));
-	max_num = list_len(*stack_a) - 1;
-	i = 0;
-	while (i < max_bit)
+	if (list_len(*stack_a) > 3)
+		stack_b = malloc(sizeof(t_list));
+	if (!stack_b)
 	{
-		j = 0;
-		while (j < max_num + 1)
-		{
-			if ((((*stack_a)->index >> i) & 1) == 1)
-				ra(stack_a, 1);
-			else
-				pb(stack_a, stack_b);
-			j++;
-		}
-		while (list_len(*stack_b) > 1)
-			pa(stack_a, stack_b);
-		i++;
+		clear_data(data);
+		exit(EXIT_FAILURE);
 	}
+	return (*stack_b);
 }

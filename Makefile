@@ -20,6 +20,7 @@ SRCS		=	./push_swap.c						\
 				./parsing/bool_str_same.c			\
 				./parsing/init_data.c				\
 				./parsing/init_stack_a.c			\
+				./parsing/init_stack_b.c			\
 				./parsing/init_index.c				\
 				./parsing/set_up_index.c			\
 				./parsing/a_is_sorted.c				\
@@ -28,6 +29,7 @@ SRCS		=	./push_swap.c						\
 				./linked_list/lstadd_back.c			\
 				./linked_list/lst_last.c			\
 				./linked_list/lst_clear.c			\
+				./linked_list/clean_all.c			\
 				./utils/ft_atoll.c					\
 				./utils/is_empty_list.c				\
 				./utils/list_len.c					\
