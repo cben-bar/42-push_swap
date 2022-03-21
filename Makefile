@@ -63,14 +63,18 @@ SRCS		=	./push_swap.c						\
 
 OBJS		=	${SRCS:.c=.o}
 
-all		:	$(NAME)
+DEPENDENCIES	=	./include/push_swap.h ./libft/libft.a
 
-.c.o	:
+all		:	| libft $(NAME)
+
+.c.o	: $(DEPENDENCIES)
 	${CC} ${FLAGS} ${HEADER} -c $< -o ${<:.c=.o}
 
-$(NAME)	:	$(OBJS) ./include/push_swap.h ./libft/libft.h
-	make -C libft
+$(NAME)	:	$(OBJS)
 	$(CC) $(FLAGS) $(OBJS) -o $(NAME) $(LIB_FLAGS)
+
+libft:
+	make -C libft
 
 clean	: 
 	make clean -C libft
@@ -82,4 +86,4 @@ fclean	:	clean
 
 re		:	fclean all
 
-.PHONY	:	all clean fclean re
+.PHONY	:	all clean fclean re libft
