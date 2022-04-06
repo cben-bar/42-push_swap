@@ -6,7 +6,7 @@
 /*   By: cben-bar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/18 14:01:24 by cben-bar          #+#    #+#             */
-/*   Updated: 2022/03/03 11:56:29 by cben-bar         ###   ########lyon.fr   */
+/*   Updated: 2022/04/06 23:35:37 by cben-bar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ t_data	*init_data(char **av)
 	data->params = ft_split(tmp, '*');
 	if (data->params == NULL)
 		error_exit(data);
-	if (data->params[0] == '\0')
+	if (data->params[0] == NULL)
 		exit(EXIT_FAILURE);
 	if (av[2])
 		free(tmp);
